@@ -58,7 +58,6 @@ namespace API.Controllers
             return Ok(token);
 
             //return Ok(new { status = 200, isSuccess = true, token = finalToken, message = "User Login successfully", UserDetails = user });
-            //return Ok(finalToken);
         }
 
         private async Task<UserLogin> GetUser(string username, string password)
