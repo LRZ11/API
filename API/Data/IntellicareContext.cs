@@ -29,21 +29,20 @@ public partial class IntellicareContext : DbContext
             entity.ToTable("user_login");
 
             entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Email)
+                .HasMaxLength(50)
+                .HasColumnName("email");
             entity.Property(e => e.Firstname)
-                .HasMaxLength(10)
-                .IsFixedLength()
+                .HasMaxLength(50)
                 .HasColumnName("firstname");
             entity.Property(e => e.Lastname)
-                .HasMaxLength(10)
-                .IsFixedLength()
+                .HasMaxLength(50)
                 .HasColumnName("lastname");
             entity.Property(e => e.Password)
-                .HasMaxLength(10)
-                .IsFixedLength()
+                .HasMaxLength(50)
                 .HasColumnName("password");
             entity.Property(e => e.Username)
-                .HasMaxLength(10)
-                .IsFixedLength()
+                .HasMaxLength(50)
                 .HasColumnName("username");
         });
 

@@ -1,4 +1,4 @@
 ﻿public class JwtSettings
 {
-    public string securitykey { get; set; }
+    public string? securitykey { get; set; }
 }
